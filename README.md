@@ -50,6 +50,7 @@ Solution:
 - State Management: Used React hooks for clean, efficient state management
 
 ### Key Implementation Details
+
 Innovative Skill Animation
 
 const ImprovedSkillsTrack = ({ skills }) => {
@@ -67,7 +68,6 @@ const ImprovedSkillsTrack = ({ skills }) => {
         {duplicatedSkills.map((skill, index) => {
           const skillKey = skill.trim().toLowerCase();
           const imageUrl = skillLogos[skillKey] || "/placeholder.svg";
-
           return (
             <div key={`skill-${index}`} className="skill-item">
               <div className="skill-icon-container">
